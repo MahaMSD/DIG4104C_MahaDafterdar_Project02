@@ -963,3 +963,175 @@ div#histotime .nav li.active .nav__body {
     font-size: 20px;
   }
 }
+
+/* --------------------------- game --------------------------- */
+body#gamebd {
+  background-color: #000000;
+}
+
+div#gamecontent {
+  clear: both;
+}
+
+div#gamecontent h1 {
+  font-family: 'Orbitron', sans-serif;
+  color: #efefef;
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 150px;
+}
+
+div#gamecontent hr {
+  width: 75%;
+  border-color: #888888;
+}
+
+#quizzie {
+  padding: 5% 0;
+  /* Individual Steps/Sections */
+  /* Content */
+}
+
+#quizzie h2 {
+  text-transform: normal;
+  /*border: 1px solid red;*/
+  font-family: 'Lato', sans-serif;
+  color: #efefef;
+  text-align: center;
+  margin-top: -50px;
+  font-size: 27px;
+}
+
+#quizzie ul {
+  list-style: none;
+  display: block;
+  width: auto;
+  margin: 2% 2%;
+  padding: 2%;
+  overflow: auto;
+  display: none;
+  /* Step Questions and Answer Options */
+}
+
+#quizzie ul.current {
+  display: block;
+}
+
+#quizzie ul li {
+  display: inline-block;
+  float: left;
+  width: 49%;
+  margin-right: 2%;
+  overflow: auto;
+  text-align: center;
+}
+
+#quizzie ul li div h3 {
+  font-family: 'Lato', sans-serif;
+  color: #cecece;
+  font-size: 18px;
+}
+
+#quizzie ul li div p {
+  font-family: 'Lato', sans-serif;
+  color: #cecece;
+  font-size: 14px;
+  padding-top: 10px;
+}
+
+
+#quizzie ul li.quiz-answer {
+  cursor: pointer;
+}
+#quizzie ul li.question, #quizzie ul li.results-inner {
+  display: block;
+  float: none;
+  width: 100%;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 2%;
+}
+
+#quizzie ul li.results-inner {
+  padding: 5% 2%;
+}
+
+#quizzie ul li.results-inner h4 {
+  font-family: 'Lato', sans-serif;
+  color: #fffffa;
+  font-size: 18px;
+}
+
+#quizzie ul li.results-inner p {
+  font-family: 'Lato', sans-serif;
+  color: #cecece;
+  font-size: 14px;
+}
+
+#quizzie ul li.results-inner img {
+  width: 250px;
+}
+#quizzie ul li:last-child {
+  margin-right: 0;
+}
+#quizzie .question-wrap, #quizzie .answer-wrap {
+  display: block;
+  padding: 1%;
+  margin: 1em 10%;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+}
+#quizzie .answer-wrap {
+  background: rgba(64, 64, 64, 0.7);
+  -moz-transition: background-color 0.5s ease;
+  -o-transition: background-color 0.5s ease;
+  -webkit-transition: background-color 0.5s ease;
+  transition: background-color 0.5s ease;
+}
+#quizzie .answer-wrap:hover {
+  background: rgba(64, 64, 64, 1);
+}
+
+
+/* ----- media quires ----- */
+/* media queries for fixing the hieght */
+/*@media all and (max-width: 992px) {
+
+}*/
+
+@media all and (max-width: 768px) {
+  div#gamecontent h1 {
+    margin-top: 170px;
+  }
+
+  div#gamecontent hr {
+    width: 85%;
+  }
+
+  #quizzie h2 {
+    margin-top: 190px;
+    font-size: 27px;
+  }
+
+  #quizzie {
+    padding-top: 0px;
+    margin-top: -20%;
+  }
+
+  #quizzie h1 {
+    font-size: 25px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+
+}
+
+@media all and (max-width: 500px) {
+  #quizzie h2 {
+    margin-top: 110px;
+    font-size: 27px;
+  }
+
+}
