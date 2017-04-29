@@ -270,3 +270,379 @@ div#homecont p {
   }
 
 }
+
+/* ---------------------------- history -------------------------- */
+body#historybd {
+  background-color: #000000;
+}
+
+div#historycontent h1 {
+  font-family: 'Orbitron', sans-serif;
+  color: #efefef;
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 200px;
+}
+
+div#historycontent h5 {
+  color: #efefef;
+  text-align: center;
+  font-size: 16px;
+  margin-top: 100px;
+  line-height: 22px;
+}
+
+.wrapper {
+  min-height: 100vh;
+  font-family: 'Roboto Slab', serif;
+  font-weight: 300;
+  color: #fff;
+  position: relative;
+}
+
+div#histotime section {
+  height: 100vh;
+  /*font-size: 40px;*/
+  font-weight: 100;
+  background-color: #22A7F0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+div#histotime section:nth-child(1) {
+  background: white;
+}
+
+div#histotime section:nth-child(2) {
+  /*background: #222222;*/
+  background: -webkit-linear-gradient(#000000, #101010); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#000000, #101010); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#000000, #101010); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#000000, #101010); /* Standard syntax */
+  margin-top: 300px;
+}
+
+div#histotime section:nth-child(3) {
+  /*background: #383838;*/
+  background: -webkit-linear-gradient(#101010, #202020); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#101010, #202020); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#101010, #202020); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#101010, #202020); /* Standard syntax */
+}
+
+div#histotime section:nth-child(4) {
+  /*background: #4e4e4e;*/
+  background: -webkit-linear-gradient(#202020, #303030); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#202020, #303030); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#202020, #303030); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#202020, #303030); /* Standard syntax */
+}
+
+div#histotime section:nth-child(5) {
+  /*background: #646464;*/
+  background: -webkit-linear-gradient(#303030, #404040); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#303030, #404040); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#303030, #404040); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#303030, #404040); /* Standard syntax */
+}
+
+div#histotime section:nth-child(6) {
+  /*background: #7a7a7a;*/
+  background: -webkit-linear-gradient(#404040, #505050); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#404040, #505050); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#404040, #505050); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#404040, #505050); /* Standard syntax */
+}
+
+div#histotime section:nth-child(7) {
+  /*background: #909090;*/
+  background: -webkit-linear-gradient(#505050, #606060); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#505050, #606060); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#505050, #606060); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#505050, #606060); /* Standard syntax */
+}
+
+div#histotime section:nth-child(8) {
+  /*background: #a6a6a6;*/
+  background: -webkit-linear-gradient(#606060, #707070); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#606060, #707070); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#606060, #707070); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#606060, #707070); /* Standard syntax */
+}
+
+div#histotime section:nth-child(9) {
+  /*background: #a6a6a6;*/
+  background: -webkit-linear-gradient(#707070, #808080); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#707070, #808080); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#707070, #808080); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#707070, #808080); /* Standard syntax */
+}
+
+div#histotime section:nth-child(10) {
+  /*background: #a6a6a6;*/
+  background: -webkit-linear-gradient(#808080, #909090); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#808080, #909090); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#808080, #909090); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#808080, #909090); /* Standard syntax */
+}
+
+div#histotime section:nth-child(11) {
+  /*background: #a6a6a6;*/
+  background: -webkit-linear-gradient(#909090, #a0a0a0); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#909090, #a0a0a0); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#909090, #a0a0a0); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#909090, #a0a0a0); /* Standard syntax */
+}
+
+div#histotime section:nth-child(12) {
+  /*background: #a6a6a6;*/
+  background: -webkit-linear-gradient(#a0a0a0, #b0b0b0); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#a0a0a0, #b0b0b0); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#a0a0a0, #b0b0b0); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#a0a0a0, #b0b0b0); /* Standard syntax */
+}
+
+
+div#histotime section p {
+  font-size: 20px;
+  line-height: 30px;
+  text-align: center;
+  color: #ffffff;
+  margin: auto;
+  padding-left: 50px;
+  /*padding-top: 150px;*/
+  /*border:2px solid blue;*/
+}
+
+div#histotime section p span.secitle {
+  font-size: 25px;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 100px;
+}
+
+div#histotime .nav__wrapper {
+  /*border:1px solid red;*/
+  margin-top: 0px;
+  position: fixed;
+  height: 100%;
+  padding-left: 30px;
+  top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: column nowrap;
+      flex-flow: column nowrap;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+div#histotime .nav {
+  margin: 0 0 100px 30px;
+}
+
+div#histotime .nav__counter {
+  font-size: 18px;
+  -webkit-transition: all 0.15s ease-out;
+  transition: all 0.15s ease-out;
+}
+
+/*div#histotime .nav__title {
+  font-size: 32px;
+  font-weight: 300;
+  margin: 0 0 0.25em;
+  width: 300px;
+  height: 0;
+  overflow: hidden;
+  opacity: 0;
+  -webkit-transition: height 0.3s ease-out, opacity 0.2s ease-out;
+  transition: height 0.3s ease-out, opacity 0.2s ease-out;
+}
+
+div#histotime .nav__body {
+  font-weight: 100;
+  font-size: 18px;
+  font-size: 18px;
+  width: 300px;
+  height: 0;
+  overflow: hidden;
+  opacity: 0;
+  -webkit-transition: height 0.3s ease-out, opacity 0.2s ease-out;
+  transition: height 0.3s ease-out, opacity 0.2s ease-out;
+}*/
+
+div#histotime .nav li {
+  position: relative;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+  margin-bottom: 1em;
+}
+
+div#histotime .nav li:after {
+  content: '';
+  display: block;
+  border-left: 2px solid white;
+  border-top: 2px solid white;
+  height: 250px;
+  width: 20px;
+  position: absolute;
+  left: -30px;
+  top: 15px;
+}
+
+div#histotime .nav li a {
+  display: block;
+  padding: 0;
+  color: #fff;
+  -webkit-transition: all 0.15s ease-out;
+  transition: all 0.15s ease-out;
+}
+
+div#histotime .nav li a:hover {
+  background-color: transparent;
+  padding-left: 1em;
+}
+
+div#histotime .nav li a:focus {
+  background-color: transparent;
+}
+
+div#histotime .nav li.active {
+  pointer-events: none;
+  padding-left: 1em;
+}
+
+div#histotime .nav li.active:after {
+  width: 35px;
+  height: 400px;
+  top: 35px;
+}
+
+div#histotime .nav li.active .nav__counter {
+  font-size: 48px;
+}
+
+div#histotime .nav li.active .nav__title {
+  height: 40px;
+  opacity: 1;
+  overflow: visible;
+}
+
+div#histotime .nav li.active .nav__body {
+  height: 100px;
+  opacity: 1;
+  overflow: visible;
+}
+
+/* -- back to top button -- */
+.back-to-top {
+  z-index: 999;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  display: inline-block;  
+  padding: 0.5em;
+  margin: 0.5em;
+  /*background: #E8E8E8;
+  border: 2px solid #000;*/
+  color: #ffffff;
+  font-size: 25px;
+}
+
+.back-to-top:hover {
+  cursor: pointer;
+  zoom: 115%;
+  /*border: 1px solid #ffffff;
+  border-radius: 7px;*/
+}
+
+/* ------------ media quires for sizing ------------- */
+/* media queries for fixing the hieght */
+@media all and (max-width: 992px) {
+  div#histotime section p {
+    font-size: 19px;
+    line-height: 30px;
+    padding-left: 30px;
+  }
+
+  div#histotime section p span.secitle {
+    font-size: 24px;
+  }
+
+  div#histotime .nav__counter {
+    font-size: 17px;
+  }
+
+  div#histotime .nav li.active .nav__counter {
+    font-size: 35px;
+  }
+}
+
+@media all and (max-width: 768px) {
+  div#histotime section p {
+    font-size: 18px;
+    line-height: 30px;
+    padding-left: 10px;
+  }
+
+  div#histotime section p span.secitle {
+    font-size: 23px;
+    line-height: 97px;
+  }
+
+  div#histotime .nav__wrapper {
+    margin-top: -50px;
+  }
+
+  div#histotime .nav__counter {
+    font-size: 16px;
+  }
+
+  div#histotime .nav li.active .nav__counter {
+    font-size: 27px;
+  }
+
+}
+
+@media all and (max-width: 500px) {
+  div#historycontent h5 {
+    margin-top: 50px;
+  }
+
+  div#histotime section p {
+    font-size: 17px;
+    line-height: 30px;
+    padding-left: 10px;
+  }
+
+  div#histotime section p span.secitle {
+    font-size: 22px;
+    line-height: 95px;
+  }
+
+  div#histotime .nav__wrapper {
+    margin-top: -100px;
+  }
+
+  div#histotime .nav__counter {
+    font-size: 15px;
+  }
+
+  div#histotime .nav li.active .nav__counter {
+    font-size: 25px;
+  }
+
+}
+
+/*@media all and (max-width: 468px) {
+  
+}
+*/
