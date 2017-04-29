@@ -426,7 +426,13 @@ div#histotime section p span.secitle {
   font-weight: bold;
   text-transform: uppercase;
   display: inline-block;
-  padding-bottom: 50px;
+  padding-bottom: 20px;
+}
+
+div#histotime section img.carfix {
+  /*width: 35%;
+  padding-bottom: 20px;*/
+
 }
 
 div#histotime .nav__wrapper {
