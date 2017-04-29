@@ -346,11 +346,11 @@ div#historycontent h5 {
   }
 } */
 
-@media all and (max-width: 468px) {
+/*@media all and (max-width: 468px) {
   .arrow {
     bottom: 125px;
   }
-}
+}*/
 
 /*@media all and (max-width: 368px) {
   .arrow {
@@ -477,6 +477,35 @@ div#histotime section:nth-child(12) {
   background: linear-gradient(#a0a0a0, #b0b0b0); /* Standard syntax */
 }
 
+div#histotime section p span.secitle {
+  font-size: 23px;
+  font-weight: bold;
+  text-transform: uppercase;
+  display: inline-block;
+  padding-bottom: 20px;
+  font-family: 'Orbitron', sans-serif;
+}
+
+div#histotime section div.imgleft {
+  margin-left: -10px;
+}
+
+div#histotime section div.pright {
+  padding-top: 10%;
+}
+
+div#histotime section div#nopad {
+  padding-top: 3%;
+}
+
+div#histotime section div.imgright {
+  margin-left: -70%;
+}
+
+div#histotime section div.pleft {
+  padding-left: 10%;
+  padding-top: 5%;
+}
 
 div#histotime section p {
   font-size: 19px;
@@ -487,21 +516,6 @@ div#histotime section p {
   padding-left: 50px;
   /*padding-top: 150px;*/
   /*border:2px solid blue;*/
-}
-
-div#histotime section p span.secitle {
-  font-size: 23px;
-  font-weight: bold;
-  text-transform: uppercase;
-  display: inline-block;
-  padding-bottom: 20px;
-  font-family: 'Orbitron', sans-serif;
-}
-
-div#histotime section img.carfix {
-  /*width: 35%;
-  padding-bottom: 20px;*/
-
 }
 
 div#histotime section div.polaroid {
@@ -668,6 +682,31 @@ div#histotime .nav li.active .nav__body {
 
 /* ------------ media quires for sizing ------------- */
 /* media queries for fixing the hieght */
+@media all and (max-width: 1150px) {
+  div#histotime section div.imgleft {
+    margin-left: 0px;
+    /*border:2px solid red;*/
+  }
+
+  div#histotime section div.pright {
+    padding-top: 10%;
+    padding-left: 15%;
+  }
+
+  div#histotime section div#nopad {
+    padding-top: 0px;
+  }
+
+  div#histotime section div.imgright {
+    margin-left: -30%;
+  }
+
+  div#histotime section div.pleft {
+    padding-left: 10%;
+    padding-top: 3%;
+  }
+}
+
 @media all and (max-width: 992px) {
   div#histotime section p {
     font-size: 19px;
@@ -680,6 +719,31 @@ div#histotime .nav li.active .nav__body {
     padding-bottom: 40px;
   }
 
+  div#histotime section div.imgleft {
+    margin-left: 0px;
+    /*border:2px solid green;*/
+  }
+
+  div#histotime section div.pright {
+    padding-top: 10%;
+    padding-left: 10%;
+  }
+
+  div#histotime section div#nopad {
+    padding-top: 0px;
+  }
+
+  div#histotime section div.imgright {
+    margin-left: -10%;
+  }
+
+  div#histotime section div.pleft {
+    padding-left: 0%;
+    margin-left: -10%;
+    padding-top: 3%;
+  }
+
+
   div#histotime .nav__counter {
     font-size: 17px;
   }
@@ -690,6 +754,10 @@ div#histotime .nav li.active .nav__body {
 }
 
 @media all and (max-width: 768px) {
+  .arrow {
+    bottom: 50px;
+  }
+
   div#histotime section p {
     font-size: 17px;
     line-height: 30px;
@@ -698,6 +766,44 @@ div#histotime .nav li.active .nav__body {
 
   div#histotime section p span.secitle {
     font-size: 23px;
+  }
+
+  div#histotime section div.polaroid img {
+    width: 200px;
+  }
+
+  div#histotime section div.polaroid p {
+    font: 400 13px/4 'Orbitron', sans-serif;
+    margin-left: -15px;
+  }
+
+  div#histotime section div.polaroid p.fixp {
+    line-height: normal;
+    font: 400 13px/3 'Orbitron', sans-serif;
+  }
+
+  div#histotime section div.imgleft {
+    margin-left: 30%;
+    /*border:2px solid blue;*/
+  }
+
+  div#histotime section div.pright {
+    padding-top: 5%;
+    padding-left: 0%;
+  }
+
+  div#histotime section div#nopad {
+    padding-top: 5%;
+  }
+
+  div#histotime section div.imgright {
+    margin-left: 30%;
+  }
+
+  div#histotime section div.pleft {
+    margin-left: 0%;
+    padding-top: 0%;
+    padding-bottom: 5%;
   }
 
   div#histotime .nav__wrapper {
@@ -715,6 +821,10 @@ div#histotime .nav li.active .nav__body {
 }
 
 @media all and (max-width: 500px) {
+  .arrow {
+    bottom: 50px;
+  }
+
   div#historycontent h5 {
     margin-top: 50px;
   }
@@ -728,6 +838,44 @@ div#histotime .nav li.active .nav__body {
   div#histotime section p span.secitle {
     font-size: 21px;
     padding-bottom: 30px;
+  }
+
+  div#histotime section div.polaroid img {
+    width: 175px;
+  }
+
+  div#histotime section div.polaroid p {
+    font: 400 10px/4 'Orbitron', sans-serif;
+    margin-left: -30px;
+  }
+
+  div#histotime section div.polaroid p.fixp {
+    line-height: normal;
+    font: 400 10px/4 'Orbitron', sans-serif;
+  }
+
+  div#histotime section div.imgleft {
+    margin-left: 19%;
+    /*border:2px solid pink;*/
+  }
+
+  div#histotime section div.pright {
+    padding-top: 5%;
+    padding-left: 0%;
+  }
+
+  div#histotime section div#nopad {
+    padding-top: 5%;
+  }
+
+  div#histotime section div.imgright {
+    margin-left: 19%;
+  }
+
+  div#histotime section div.pleft {
+    margin-left: 0%;
+    padding-top: 0%;
+    padding-bottom: 5%;
   }
 
   div#histotime .nav__wrapper {
@@ -745,6 +893,60 @@ div#histotime .nav li.active .nav__body {
 }
 
 @media all and (max-width: 320px) {
+  .arrow {
+    bottom: 45px;
+  }
+
+  div#histotime section p {
+    font-size: 12px;
+    line-height: 20px;
+    padding-left: 10px;
+  }
+
+  div#histotime section p span.secitle {
+    font-size: 18px;
+    line-height: 22px;
+    padding-bottom: 15px;
+  }
+
+  div#histotime section div.polaroid img {
+    width: 125px;
+    border-bottom: 25px solid #fff;
+  }
+
+  div#histotime section div.polaroid p {
+    font: 400 8px/3 'Orbitron', sans-serif;
+    margin-left: -53px;
+  }
+
+  div#histotime section div.polaroid p.fixp {
+    line-height: normal;
+    font: 400 8px/3 'Orbitron', sans-serif;
+  }
+
+  div#histotime section div.imgleft {
+    margin-left: 20%;
+    /*border:2px solid brown;*/
+  }
+
+  div#histotime section div.pright {
+    padding-top: 5%;
+    padding-left: 7%;
+  }
+
+  div#histotime section div#nopad {
+    padding-top: 5%;
+  }
+
+  div#histotime section div.imgright {
+    margin-left: 20%;
+  }
+
+  div#histotime section div.pleft {
+    margin-left: 7%;
+    padding-top: 0%;
+    padding-bottom: 5%;
+  }
   div#histotime .nav__wrapper {
     margin-top: -65px;
   }
