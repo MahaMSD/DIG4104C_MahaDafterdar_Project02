@@ -425,7 +425,8 @@ div#histotime section p span.secitle {
   font-size: 25px;
   font-weight: bold;
   text-transform: uppercase;
-  line-height: 100px;
+  display: inline-block;
+  padding-bottom: 50px;
 }
 
 div#histotime .nav__wrapper {
@@ -530,7 +531,7 @@ div#histotime .nav li.active .nav__counter {
   font-size: 48px;
 }
 
-div#histotime .nav li.active .nav__title {
+/*div#histotime .nav li.active .nav__title {
   height: 40px;
   opacity: 1;
   overflow: visible;
@@ -540,7 +541,7 @@ div#histotime .nav li.active .nav__body {
   height: 100px;
   opacity: 1;
   overflow: visible;
-}
+}*/
 
 /* -- back to top button -- */
 .back-to-top {
@@ -575,6 +576,7 @@ div#histotime .nav li.active .nav__body {
 
   div#histotime section p span.secitle {
     font-size: 24px;
+    padding-bottom: 40px;
   }
 
   div#histotime .nav__counter {
@@ -588,14 +590,13 @@ div#histotime .nav li.active .nav__body {
 
 @media all and (max-width: 768px) {
   div#histotime section p {
-    font-size: 18px;
+    font-size: 17px;
     line-height: 30px;
     padding-left: 10px;
   }
 
   div#histotime section p span.secitle {
     font-size: 23px;
-    line-height: 97px;
   }
 
   div#histotime .nav__wrapper {
@@ -618,18 +619,18 @@ div#histotime .nav li.active .nav__body {
   }
 
   div#histotime section p {
-    font-size: 17px;
-    line-height: 30px;
+    font-size: 15px;
+    line-height: 26px;
     padding-left: 10px;
   }
 
   div#histotime section p span.secitle {
-    font-size: 22px;
-    line-height: 95px;
+    font-size: 21px;
+    padding-bottom: 30px;
   }
 
   div#histotime .nav__wrapper {
-    margin-top: -100px;
+    margin-top: -90px;
   }
 
   div#histotime .nav__counter {
@@ -642,7 +643,20 @@ div#histotime .nav li.active .nav__body {
 
 }
 
-/*@media all and (max-width: 468px) {
-  
+@media all and (max-width: 320px) {
+  div#histotime .nav__wrapper {
+    margin-top: -65px;
+  }
+
+  div#histotime .nav li.active {
+    padding-left: 0.1em;
+  }
+
+  div#histotime .nav__counter {
+    font-size: 13px;
+  }
+
+  div#histotime .nav li.active .nav__counter {
+    font-size: 20px;
+  }
 }
-*/
