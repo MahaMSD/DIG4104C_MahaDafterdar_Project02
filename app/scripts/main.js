@@ -1,4 +1,14 @@
 /* ------------------------ history timeline ---------------------- */
+//scrolling arrow
+  $(window).scroll(function() {
+    var scroll = $(window).scrollTop();
+    if (scroll >= 1) {
+      $('.arrow').addClass('fade');
+    } else{
+      $('.arrow').removeClass('fade');
+    }
+  })
+  
 // SMOOTH SCROLLING SECTIONS
 $('a[href*=#]:not([href=#])').click(function() {
     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') 

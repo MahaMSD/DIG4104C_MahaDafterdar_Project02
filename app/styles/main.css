@@ -292,6 +292,74 @@ div#historycontent h5 {
   line-height: 22px;
 }
 
+/* ----- arrow ----- */
+.arrow {
+  position: fixed;
+  bottom: 50px;
+  left: 50%;
+  margin-left: -20px;
+  width: 20px;
+  height: 20px;
+  background-image: url(../images/arrow01.png);
+  background-size: contain;
+}
+
+.bounce {
+  -moz-animation: bounce 2s infinite;
+  -webkit-animation: bounce 2s infinite;
+  animation: bounce 2s infinite;
+}
+
+.fade {
+  opacity:0;
+  transition: 1s all ease-out;
+}
+
+/* media queries for fixing the hieght */
+/*@media all and (max-width: 992px) {
+  .arrow {
+    bottom: 205px;
+  }
+}
+
+@media all and (max-width: 850px) {
+  .arrow {
+    bottom: 255px;
+  }
+}
+
+@media all and (max-width: 768px) {
+  .arrow {
+    bottom: 335px;
+  }
+}
+
+@media all and (max-width: 620px) {
+  .arrow {
+    bottom: 405px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .arrow {
+    bottom: 425px;
+  }
+} */
+
+@media all and (max-width: 468px) {
+  .arrow {
+    bottom: 125px;
+  }
+}
+
+/*@media all and (max-width: 368px) {
+  .arrow {
+    bottom: 495px;
+  }
+}
+*/
+
+
 .wrapper {
   min-height: 100vh;
   font-family: 'Roboto Slab', serif;
