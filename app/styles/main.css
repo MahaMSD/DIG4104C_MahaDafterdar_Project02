@@ -479,7 +479,7 @@ div#histotime section:nth-child(12) {
 
 
 div#histotime section p {
-  font-size: 20px;
+  font-size: 19px;
   line-height: 30px;
   text-align: center;
   color: #ffffff;
@@ -490,17 +490,44 @@ div#histotime section p {
 }
 
 div#histotime section p span.secitle {
-  font-size: 25px;
+  font-size: 23px;
   font-weight: bold;
   text-transform: uppercase;
   display: inline-block;
   padding-bottom: 20px;
+  font-family: 'Orbitron', sans-serif;
 }
 
 div#histotime section img.carfix {
   /*width: 35%;
   padding-bottom: 20px;*/
 
+}
+
+div#histotime section div.polaroid {
+  position: relative;
+  width: 220px;
+}
+ 
+div#histotime section div.polaroid img {
+  border: 10px solid #fff;
+  border-bottom: 45px solid #fff;
+  -webkit-box-shadow: 3px 3px 3px #777;
+     -moz-box-shadow: 3px 3px 3px #777;
+          box-shadow: 3px 3px 3px #777;
+}
+
+div#histotime section div.polaroid p {
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  bottom: 0px;
+  font: 400 15px/3 'Orbitron', sans-serif;
+  color: #888;
+}
+ 
+div#histotime section div.polaroid p.fixp {
+  line-height: 20px;
 }
 
 div#histotime .nav__wrapper {
