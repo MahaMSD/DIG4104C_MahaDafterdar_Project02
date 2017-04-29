@@ -46,15 +46,15 @@ $backToTop.on('click', function(e) {
 // Quiz result options in a separate object for flexibility
 var resultOptions = [
     {   title: 'You Are This Thing',
-        desc: '<p>...</p>'},
-    {   title: 'You Are That Thing',
-        desc: '<p>...</p>'},
-    {   title: 'You Are This Other Thing',
-        desc: '<p>...</p>'},
+        desc: '<p>1</p>'},
+    {   title: 'sporty convertable car!',
+        desc: '<p>You’re a free spirit who loves the attention. You don’t always play by the rules, but neither does the 1967 Chevrolet Corvette Convertible.</p>'},
+    {   title: 'old one',
+        desc: '<p>You’re a classy old soul, which is exactly why the 1957 Chevrolet Bel Air is perfect for you – with its iconic slick tailfins, chrome features, and overall classic beauty.</p>'},
     {   title: 'You Are This One Thing',
-        desc: '<p>...</p>'},
+        desc: '<p>4</p>'},
     {   title: 'You Are A Type Of Thing',
-        desc: '<p>...</p>'}
+        desc: '<p>5</p>'}
 ];
     
 // global variables
@@ -113,7 +113,7 @@ function updateStep(currentStep) {
 function calcResults(totalScore) {
     // only update the results div if all questions have been answered
     if (quizSteps.find('.active').length == quizSteps.length){
-        var resultsTitle = $('#results h1'),
+        var resultsTitle = $('#results h4'),
             resultsDesc = $('#results .desc');
         
         // calc lowest possible score
