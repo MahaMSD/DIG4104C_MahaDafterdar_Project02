@@ -1030,19 +1030,20 @@ div#gamecontent hr {
   font-family: 'Lato', sans-serif;
   color: #cecece;
   font-size: 18px;
+  text-transform: capitalize;
 }
 
 #quizzie ul li div p {
   font-family: 'Lato', sans-serif;
   color: #cecece;
-  font-size: 14px;
+  font-size: 16px;
   padding-top: 10px;
 }
-
 
 #quizzie ul li.quiz-answer {
   cursor: pointer;
 }
+
 #quizzie ul li.question, #quizzie ul li.results-inner {
   display: block;
   float: none;
@@ -1053,24 +1054,50 @@ div#gamecontent hr {
 }
 
 #quizzie ul li.results-inner {
-  padding: 5% 2%;
+  padding-top: 5%;
+  padding-left: 2%;
+  padding-right: 2%;
+  margin-bottom: -25px;
+}
+
+#quizzie ul li.results-inner p#fixtop {
+  margin-top: -4%;
+  text-transform: capitalize;
+  padding-right: 0;
+  padding-left: 0;
 }
 
 #quizzie ul li.results-inner h4 {
-  font-family: 'Lato', sans-serif;
+  font-family: 'Orbitron', sans-serif;
   color: #fffffa;
-  font-size: 18px;
+  font-size: 26px;
+  padding-bottom: 2%;
+}
+
+#quizzie ul li.results-inner hr {
+  width: 50%;
+  padding-top: 2%;
 }
 
 #quizzie ul li.results-inner p {
   font-family: 'Lato', sans-serif;
   color: #cecece;
-  font-size: 14px;
+  font-size: 18px;
+  padding-right: 15%;
+  padding-left: 5%;
+  padding-top: 2%;
 }
 
 #quizzie ul li.results-inner img {
   width: 250px;
+  border: 10px solid #ffffff;
+  margin-left: -50%;
 }
+
+#quizzie ul li.results-inner div#padbottom {
+  padding-bottom: 3%;
+}
+
 #quizzie ul li:last-child {
   margin-right: 0;
 }
@@ -1096,13 +1123,21 @@ div#gamecontent hr {
 
 /* ----- media quires ----- */
 /* media queries for fixing the hieght */
-/*@media all and (max-width: 992px) {
+@media all and (max-width: 992px) {
+  #quizzie ul li.results-inner img {
+    border: 10px solid #ffffff;
+    margin-left: 0%;
+  }
 
-}*/
+  #quizzie ul li.results-inner p {
+    padding-right: 7%;
+    padding-left: 7%;
+  }
+}
 
 @media all and (max-width: 768px) {
   div#gamecontent h1 {
-    margin-top: 170px;
+    margin-top: 140px;
   }
 
   div#gamecontent hr {
@@ -1110,7 +1145,7 @@ div#gamecontent hr {
   }
 
   #quizzie h2 {
-    margin-top: 190px;
+    margin-top: 170px;
     font-size: 27px;
   }
 
@@ -1119,7 +1154,7 @@ div#gamecontent hr {
     margin-top: -20%;
   }
 
-  #quizzie h1 {
+  #quizzie h4 {
     font-size: 25px;
     padding-left: 50px;
     padding-right: 50px;
@@ -1129,9 +1164,38 @@ div#gamecontent hr {
 }
 
 @media all and (max-width: 500px) {
+  div#gamecontent h1 {
+    margin-top: 120px;
+  }
+
   #quizzie h2 {
     margin-top: 110px;
     font-size: 27px;
+    padding-right: 5%;
+    padding-left: 5%;
+  }
+
+}
+
+@media all and (max-width: 400px) {
+  #quizzie h2 {
+    margin-top: 110px;
+    font-size: 25px;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 3%;
+  }
+
+  #quizzie ul li.results-inner img {
+    width: 200px;
+  }
+
+  #quizzie ul li.results-inner p {
+    font-size: 16px;
+  }
+
+  #quizzie ul li.results-inner hr {
+    width: 60%;
   }
 
 }

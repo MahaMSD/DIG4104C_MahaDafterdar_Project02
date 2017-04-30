@@ -47,23 +47,23 @@ $backToTop.on('click', function(e) {
 var resultOptions = [
     {   title: '1964 Ford Cobra',
         desc: '<p>Sophisticated, intelligent, and classy, you have a taste for the finer things in life. The 1964 Ford Cobra is a perfect ride for someone like you.</p>',
-        resimg: '../images/1964.jpg'
+        resimg: '../images/ford1964.jpg'
     },
     {   title: '2017 Ford GT',
         desc: '<p>You’re a free spirit who loves the attention. You don’t always play by the rules, but neither does the 2017 Ford GT.</p>',
-        resimg: '../images/1964.jpg'
+        resimg: '../images/ford2017.jpg'
     },
     {   title: '1936 Ford',
         desc: '<p>You’re a classy old soul, which is exactly why the 1936 Ford is perfect for you – with its iconic slick tailfins, chrome features, and overall classic beauty.</p>',
-        resimg: '../images/1964.jpg'
+        resimg: '../images/ford1936.jpg'
     },
     {   title: '1932 Ford Highboy',
         desc: '<p>You deserve an era of adventure, and glory, and the 1932 Ford Highboy is just the perfect fit for you. Happy driving</p>',
-        resimg: '../images/1964.jpg'
+        resimg: '../images/ford1932.jpg'
     },
     {   title: '1965 Ford Shelby GT350',
         desc: '<p>Many have said that the 1965 Shelby GT350 Fastback is the perfect car — so we can’t imagine a more perfect fit for you. Some people drive to get places, you drive to feel the thrill of the open road.</p>',
-        resimg:'../images/1964.jpg'
+        resimg:'../images/ford1965.jpg'
     }
 ];
     
