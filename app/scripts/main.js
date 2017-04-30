@@ -24,7 +24,11 @@ $(document).ready(function() {
     transition: function(url){ window.location.href = url; }
    });
 
+   
    //for history page
+   //hide content than fade in while ansimination
+   $('#historybd').hide().delay(650).fadeIn(1000);
+   //ansimination
    $('.animsition02').animsition({
     inClass: 'fade-in-down-lg',
     outClass: 'fade-out-down-lg',
@@ -47,8 +51,14 @@ $(document).ready(function() {
     overlayParentElement : 'body',
     transition: function(url){ window.location.href = url; }
    });
+   //hide the timeline delay then slide/fade in
+   $('#histotime').hide().delay(850).fadeIn(2000);
 
+   
    //for game page
+   //hide content than fade in while ansimination
+   $('#gamebd').hide().delay(650).fadeIn(1000);
+   //ansimination
    $('.animsition03').animsition({
      inClass: 'fade-in-left-sm',
     outClass: 'fade-out-left-sm',
@@ -61,7 +71,7 @@ $(document).ready(function() {
     loadingClass: 'animsition-loading',
     loadingInner: '', // e.g '<img src="loading.svg" />'
     timeout: false,
-    timeoutCountdown: 5000,
+    timeoutCountdown: 7000,
     onLoadEvent: true,
     browser: [ 'animation-duration', '-webkit-animation-duration'],
     // "browser" option allows you to disable the "animsition" in case the css property in the array is not supported by your browser.
@@ -71,6 +81,7 @@ $(document).ready(function() {
     overlayParentElement : 'body',
     transition: function(url){ window.location.href = url; }
    });
+   // $('#gamebd').delay(700).show();
 
 });
 
