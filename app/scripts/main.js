@@ -45,16 +45,26 @@ $backToTop.on('click', function(e) {
 /* ------------------------ game quiz buzzfeed ---------------------- */
 // Quiz result options in a separate object for flexibility
 var resultOptions = [
-    {   title: 'You Are This Thing',
-        desc: '<p>1</p>'},
-    {   title: 'sporty convertable car!',
-        desc: '<p>You’re a free spirit who loves the attention. You don’t always play by the rules, but neither does the 1967 Chevrolet Corvette Convertible.</p>'},
-    {   title: 'old one',
-        desc: '<p>You’re a classy old soul, which is exactly why the 1957 Chevrolet Bel Air is perfect for you – with its iconic slick tailfins, chrome features, and overall classic beauty.</p>'},
-    {   title: 'You Are This One Thing',
-        desc: '<p>4</p>'},
-    {   title: 'You Are A Type Of Thing',
-        desc: '<p>5</p>'}
+    {   title: '1964 Ford Cobra',
+        desc: '<p>Sophisticated, intelligent, and classy, you have a taste for the finer things in life. The 1964 Ford Cobra is a perfect ride for someone like you.</p>',
+        resimg: '../images/1964.jpg'
+    },
+    {   title: '2017 Ford GT',
+        desc: '<p>You’re a free spirit who loves the attention. You don’t always play by the rules, but neither does the 2017 Ford GT.</p>',
+        resimg: '../images/1964.jpg'
+    },
+    {   title: '1936 Ford',
+        desc: '<p>You’re a classy old soul, which is exactly why the 1936 Ford is perfect for you – with its iconic slick tailfins, chrome features, and overall classic beauty.</p>',
+        resimg: '../images/1964.jpg'
+    },
+    {   title: '1932 Ford Highboy',
+        desc: '<p>You deserve an era of adventure, and glory, and the 1932 Ford Highboy is just the perfect fit for you. Happy driving</p>',
+        resimg: '../images/1964.jpg'
+    },
+    {   title: '1965 Ford Shelby GT350',
+        desc: '<p>Many have said that the 1965 Shelby GT350 Fastback is the perfect car — so we can’t imagine a more perfect fit for you. Some people drive to get places, you drive to feel the thrill of the open road.</p>',
+        resimg:'../images/1964.jpg'
+    }
 ];
     
 // global variables
@@ -114,7 +124,8 @@ function calcResults(totalScore) {
     // only update the results div if all questions have been answered
     if (quizSteps.find('.active').length == quizSteps.length){
         var resultsTitle = $('#results h4'),
-            resultsDesc = $('#results .desc');
+            resultsDesc = $('#results .desc'),
+            resultsImg = $('#results .resimg');
         
         // calc lowest possible score
         var lowestScoreArray = $('#quizzie .low-value').map(function() {
@@ -145,6 +156,7 @@ function calcResults(totalScore) {
                 // populate results
                 resultsTitle.replaceWith('<h4>' + resultOptions[n].title + '</h4>');
                 resultsDesc.replaceWith('<p class=\'desc\'>' + resultOptions[n].desc + '</p>');
+                resultsImg.replaceWith('<img src=\'' + resultOptions[n].resimg + '\' alt=\'imgres\'>')
                 return;
             } else {
                 n++;
